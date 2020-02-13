@@ -6,8 +6,8 @@ This yaml file creates a kubernetes DaemonSet with zabbix-agent. It can be also 
 install: 
 
   1. edit <br>
-    >>>EDIT_ZABBIX_SERVER_HOSTNAME <br>
-    >>>EDIT_ZABBIX_SERVER_IP<br>
+    >>>EDIT_ZABBIX_SERVER_HOSTNAME<<<< <br>
+    >>>EDIT_ZABBIX_SERVER_IP<<<<<br>
     in `zabbix-agent-kubernetes.yaml`
   2. create user "api" in zabbix for API access
   3. create file with zabbix "api" user password: <br>
