@@ -36,7 +36,7 @@ spec:
             - name: ZABBIX_API_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: profesia-env
+                  name: zabbix-api-secret
                   key: ZABBIX_API_PASSWORD
           image: pavolculka/zabbix-agent-kubernetes:2.0
           imagePullPolicy: Always
