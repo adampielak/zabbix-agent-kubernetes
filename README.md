@@ -1,7 +1,7 @@
 # zabbix-agent-kubernetes
-Zabbix agent pod for kubernetes with autoscaling support
+Zabbix agent pod for kubernetes with node pool autoscaling support
 
-this yaml file creates a kubernetes DaemonSet with zabbix-agent. it can be also used for autoscaling pool nodes. it automatically disables the kubernetes node in zabbix after it scales down, so you will have no alerts and it will keep the history for the node.
+This yaml file creates a kubernetes DaemonSet with zabbix-agent. It can be also used for pool nodes which scale up/down. It automatically disables the kubernetes node in zabbix after it scales down, so you will have no alerts and it will keep the history for the node.
 
 install: 
 
