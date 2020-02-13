@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: DaemonSet
 metadata:
   name: zabbix-agent
-  namespace: >>>>EDIT_KUBERNETES_NAMESPACE
+  namespace: >>>>EDIT_KUBERNETES_NAMESPACE<<<<
   labels:
     tier: monitoring
     app: zabbix-agent
@@ -14,9 +14,9 @@ spec:
         name: zabbix-agent
     spec:
       hostAliases:
-        - ip: >>>EDIT_ZABBIX_SERVER_IP
+        - ip: >>>EDIT_ZABBIX_SERVER_IP<<<<
           hostnames:
-            - >>>EDIT_ZABBIX_SERVER_HOSTNAME
+            - >>>EDIT_ZABBIX_SERVER_HOSTNAME<<<<
       hostPID: true
       hostIPC: true
       hostNetwork: false
@@ -28,7 +28,7 @@ spec:
             privileged: true
           env:
             - name: ZBX_SERVER_HOST
-              value: >>>EDIT_ZABBIX_SERVER_HOSTNAME
+              value: >>>EDIT_ZABBIX_SERVER_HOSTNAME<<<<
             - name: ZBX_HOSTNAME
               valueFrom:
                 fieldRef:
