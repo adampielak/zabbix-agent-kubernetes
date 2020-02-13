@@ -12,3 +12,4 @@ install:
   3. create file with zabbix "api" user password: <br>
         echo "ZABBIX_API_PASSWORD=YOUR_API_PASSWORD" > YOUR_API_PASSWORD_FILE
   4. kubectl -n $NAMESPACE create secret generic zabbix-api-secret --from-env-file=YOUR_API_PASSWORD_FILE
+  5. kubectl apply -f zabbix-agent-kubernetes.yaml
