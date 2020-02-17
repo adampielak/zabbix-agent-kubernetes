@@ -52,7 +52,7 @@ spec:
           lifecycle:
             preStop:
               exec:
-                command: ["/var/tmp/zabbix_disable_node.sh"]
+                command: ["/bin/sh", "-c", "/var/tmp/zabbix_disable_node.sh"]
       volumes:
         - name: rootfs
           hostPath:
